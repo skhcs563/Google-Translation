@@ -13,9 +13,9 @@
             var url = $("#url_post").val();
 
                 var JSONdata = {
-                    key: $(#key).val(),
-                    q: $(#q).val(),
-                    target: $(#target).val()
+                    key: $("#key").val(),
+                    q: $("#q").val(),
+                    target: $("#target").val()
                 };
 
             alert(JSON.stringify(JSONdata));
@@ -50,9 +50,9 @@
 <body>
     <h1>HTMLファイルからPOSTでJSONデータを送信する</h1>
     <p>URL: <input type="text" id="url_post" name="url" size="100" value="https://translation.googleapis.com/language/translate/v2/"></p>
-    <p>value1: <input type="text" id="key" size="30" value="値1"></p>
+    <p>value1: <input type="text" id="key" size="30" value="AIzaSyAcCdfXlMpPuF6-rGjer-trucs_OwVsZWk"></p>
     <p>value2: <input type="text" id="q" size="30" value="値2"></p>
-    <p>value3: <input type="text" id="target" size="30" value="値3"></p>
+    <p>value3: <input type="text" id="target" size="30" value="ja"></p>
     <p><button id="button" type="button">submit</button></p>
     <textarea id="response" cols=120 rows=10 disabled></textarea>
 </body>
